@@ -19,4 +19,4 @@ Collapsed None + Neither + Other <br>
 -This accounted for 8,430 observations (reducing N from 55,674 to 47,244)
 -Political mobilization questions were not asked in 1948, 1954, 1958, and 1966 waves
 -Button question was not asked in 1952, which is a shame because that was probably a banner year for campaign chum:
-![alt text](https://github.com/lizmckenna/ANES/images/i-like-ike-two-ike-button.jpg)
+![alt text](/images/i-like-ike-two-ike-button.jpg)
