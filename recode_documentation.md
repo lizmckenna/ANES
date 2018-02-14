@@ -3,7 +3,7 @@ Recodes
 </h1>
 <br>
 <br>
-<h2> Yes and No </h2)
+<h2> Yes and No </h2>
 ANES data was listed as 1. No and 2. Yes. <br>
 Recode:<br>
 1. No == 2<br>
