@@ -1,7 +1,7 @@
 <h1>
 Recodes
 </h1>
-Here is a description of the recoding I did of the raw ANES data to produce the campaign participation (button-wearing, rally attendence, etc.)
+Here is a description of the recoding I did of the raw ANES data to produce the campaign participation (button-wearing, rally attendence, etc.) graphs and tables.
 <br>
 <br>
 <h2> Yes and No </h2>
