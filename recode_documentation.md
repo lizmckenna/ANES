@@ -13,6 +13,7 @@ Recode:<br>
 <h2> Party ID </h2>
 Omitted NA and DKs <br>
 Collapsed None + Neither + Other <br>
+Except for 2016, when the question was asked in such a way as to collapse Independent and 'Other' (I coded these as Independent)<br>
 
 <h2> Omitting NAs </h2>
 -Removed observations that had NAs across all three questions (VCF0718, VC0719, VCF0720)
