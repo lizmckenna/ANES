@@ -7,13 +7,14 @@ Here is a description of the recoding I did of the raw ANES data to produce the 
 <h2> Yes and No </h2>
 ANES data was listed as 1. No and 2. Yes. <br>
 Recode:<br>
+<br>
 1. No == 2<br>
 2. Yes == 1<br>
 <br>
 <h2> Party ID </h2>
-Omitted NA, DKs, and refusals <br>
-Collapsed None + Neither + Other <br>
-Except for 2016, when the question was asked in such a way as to collapse Independent and 'Other' (I coded these as Independent)<br>
+-Omitted NA, DKs, and refusals <br>
+-Collapsed None + Neither + Other <br>
+-Except for 2016, when the question was asked in such a way as to collapse Independent and 'Other' (I coded these as Independent)<br>
 
 <h2> Omitting NAs </h2>
 -Removed observations that had NAs across all three questions (VCF0718, VC0719, VCF0720)<br>
