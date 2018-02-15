@@ -10,16 +10,12 @@ library(tibble)
 library(tidyverse)
 
 # Read in file after recode (before and after .csvs available in this repo)
-modes <- read.csv(file="/Users/lizmckenna/Desktop/three_modes+2016.csv", header=TRUE, sep=",")
+mode.bw <- read.csv(file="/Users/lizmckenna/Desktop/mode+2016_v2.csv", header=TRUE, sep=",")
 
 
-# Change line types by groups (supp)
-ggplot(modes, aes(x=year, y=percent_yes, group=mode)) +
-  geom_line(aes(linetype=mode))+
-  geom_point(aes(shape=mode))+
-  scale_linetype_manual(values=c("twodash", "solid", "dotted"))
+# plot
 
-p<-ggplot(modes, aes(x=year, y=percent_yes, group=mode)) +
+p<-ggplot(mode.bw, aes(x=year, y=percent_yes, group=mode)) +
   geom_line(aes(linetype=mode))+
   geom_point(aes(shape=mode), size=2)+
   scale_linetype_manual(values=c("twodash", "solid", "dotted"),
@@ -46,6 +42,15 @@ p5
 p6 <- p5 + scale_y_continuous(labels = scales::percent, breaks =c(0.0,0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.10,0.11,0.12,0.13,0.14,0.15,0.16,0.17,0.18,0.19,0.2,0.21,0.22,0.23,0.24,0.25))
 p6
 p7 <- p6 + labs(x = "Year", y = "Percent of respondents")
-p7
-
+p8 <- p7 + theme(legend.position="bottom",legend.title=element_blank())
+p8
 ggplotly(p7)
+
+
+###render graphic for Word
+setwd('/Users/lizmckenna/Desktop/') # place to save the file - can be over-ridden by putting a path in the 
+
+
+tiff("McKenna_Fig1.tiff", width = 12, height = 10, units = 'in', res = 300, compression = 'rle')
+plot(p8)
+dev.off()
