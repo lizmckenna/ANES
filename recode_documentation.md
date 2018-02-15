@@ -22,8 +22,11 @@ Collapsed None + Neither + Other <br>
 
 <h2> ANES questions </h2>
 (Coded as Party): What political party are you registered with, if any?<br>
+<br>
 (Coded as Rally): Did you go to any political meetings, rallies, speeches, dinners, or things like
 that in support of a particular candidate?<br>
+<br>
 (Coded as Button): Did you wear a campaign button, put a campaign sticker on your car, or
 place a sign in your window or in front of your house?<br>
+<br>
 (Coded as Campaigned): Did you do any (other) work for one of the parties or candidates?<br>
