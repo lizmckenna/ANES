@@ -5,7 +5,7 @@ Here is a description of the recoding I did of the raw ANES data to produce the 
 <br>
 <br>
 <h2> Yes and No </h2>
-ANES data was listed as 1. No and 2. Yes. *except for 2016 when it reversed! agh* <br>
+ANES data was listed as 1. No and 2. Yes. *except for 2016 when it reversed!* <br>
 Recode:<br>
 <br>
 1. No == 2<br>
