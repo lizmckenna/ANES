@@ -20,7 +20,7 @@ Recode:<br>
 -Removed observations that had NAs across all three questions (VCF0718, VC0719, VCF0720)<br>
 -This accounted for 8,430 observations (reducing N from 55,674 to 47,244) for the time series up to 2012, and 623 in 2016 wave<br>
 -Political mobilization questions were not asked in 1948, 1954, 1958, and 1966 waves<br>
--Button question was not asked in 1952, which is a shame because that was probably a banner year for I Like Ike campaign chum (maybe that's why they started asking, ha).<br>
+-Button question was not asked in 1952, which is a shame because that was probably a banner year for I Like Ike campaign chum (maybe that's why they started asking it).<br>
 
 <h2> ANES questions </h2>
 (Coded as Party): What political party are you registered with, if any?<br>
