@@ -93,3 +93,22 @@ print(anes2$button)
 #Rbind the two datasets now that they share variable names
 anes_merged <- rbind(anes1, anes2)
 
+# Recode lib-cons variable
+anes_merged$`lib-cons` <- as.character(anes_merged$`lib-cons`)
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="0. NA; no Post IW; form III,IV (1972); R not"] <- "NA"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="1. Extremely liberal"] <- "Extremely liberal"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="2. Liberal"] <- "Liberal"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="3. Slightly liberal"] <- "Slightly liberal"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="4. Moderate, middle of the road"] <- "Moderate"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="5. Slightly conservative"] <- "Slightly conservative"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="6. Conservative"] <- "Conservative"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="9. DK; haven't thought much about it"] <- "DK"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="-9. Refused"] <- "REF"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="-8. Don't know (FTF only)"] <- "DK"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="99. Haven't thought much about this (FTF ONLY: DO NOT PROBE)"] <- "DK"
+
+print(anes_merged$`lib-cons`)
+
+#Write csv
+write.csv(anes_merged, file = "anes_merged_clean.csv")
+
