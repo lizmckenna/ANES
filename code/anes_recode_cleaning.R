@@ -102,10 +102,12 @@ anes_merged$`lib-cons`[anes_merged$`lib-cons`=="3. Slightly liberal"] <- "Slight
 anes_merged$`lib-cons`[anes_merged$`lib-cons`=="4. Moderate, middle of the road"] <- "Moderate"
 anes_merged$`lib-cons`[anes_merged$`lib-cons`=="5. Slightly conservative"] <- "Slightly conservative"
 anes_merged$`lib-cons`[anes_merged$`lib-cons`=="6. Conservative"] <- "Conservative"
+anes_merged$`lib-cons`[anes_merged$`lib-cons`=="7. Extremely conservative"] <- "Extremeley conservative"
 anes_merged$`lib-cons`[anes_merged$`lib-cons`=="9. DK; haven't thought much about it"] <- "DK"
 anes_merged$`lib-cons`[anes_merged$`lib-cons`=="-9. Refused"] <- "REF"
 anes_merged$`lib-cons`[anes_merged$`lib-cons`=="-8. Don't know (FTF only)"] <- "DK"
 anes_merged$`lib-cons`[anes_merged$`lib-cons`=="99. Haven't thought much about this (FTF ONLY: DO NOT PROBE)"] <- "DK"
+
 
 print(anes_merged$`lib-cons`)
 
